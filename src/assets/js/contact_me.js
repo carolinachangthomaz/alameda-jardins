@@ -25,7 +25,6 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        //url: "././mail/contact_me.php",
         url: "http://contato-service.us-east-1.elasticbeanstalk.com/profile",
         type: 'POST',
         contentType : 'application/json; charset=utf-8',
