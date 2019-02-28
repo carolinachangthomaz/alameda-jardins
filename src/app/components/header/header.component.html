@@ -1,9 +1,23 @@
 <!-- Header -->
-<header class="masthead bg-primary text-white text-center">
-    <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="assets/img/profile.jpg" alt="">
-      <h1 class="text-uppercase mb-0">Carolina Chang Thomaz</h1>
-      <hr class="star-light">
-      <h2 class="font-weight-light mb-0">Java Web Developer</h2>
+<header class="masthead  text-white text-center" *ngIf="imagens">
+  <div id="demo" class="carousel slide" data-ride="carousel" >
+    <ul class="carousel-indicators">
+      <li data-target="#demo" *ngFor="let x of imagens;let i = index"  attr.data-slide-to="{{i}}" ngClass="i == 0 ? 'active' : ''"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div *ngFor="let image of imagens; let k = index" [ngClass]="k == 0 ? 'carousel-item active' : 'carousel-item'">
+        <img src="{{image.src}}" alt="Los Angeles" width="1100" height="500">
+        <div class="carousel-caption">
+            <h3>{{image.texto}}</h3>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" style="left: 10% !important" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" style="right: 10% !important" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+    <!-- https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_carousel2 -->
   </header>

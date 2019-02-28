@@ -1,127 +1,60 @@
 <!-- Portfolio Grid Section -->
-<section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Projetos</h2>
-      <hr class="star-dark mb-5">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="assets/img/portfolio/portfolio.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="assets/img/portfolio/blank.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="assets/img/portfolio/blank.png" alt="">
-          </a>
-        </div>
-      </div>
+<section class="portfolio bg-primary" id="portfolio">
+    <div class="container mt-3">
+  <h2>Toggleable Tabs</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+</div>
   </section>
 
-<!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-        <div class="portfolio-modal-dialog bg-white">
-          <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-            <i class="fa fa-3x fa-times"></i>
-          </a>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2 class="text-secondary text-uppercase mb-0">Portfólio</h2>
-                <hr class="star-dark mb-5">
-                <img class="img-fluid mb-5" src="assets/img/portfolio/portfolio.jpg" alt="">
-                <p class="mb-5">
-                  - Backend - Deploy AWS
-                  <br/>     
-                    https://github.com/carolinachangthomaz/contato-service
-                    <br/>     
-                  - Frontend - Integrator Host 
-                  <br/>     
-                    https://github.com/carolinachangthomaz/portfolio
-                    <br/>
-                </p>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                  <i class="fa fa-close"></i>
-                   Fechar projeto</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Portfolio Modal 2 -->
-      <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-        <div class="portfolio-modal-dialog bg-white">
-          <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-            <i class="fa fa-3x fa-times"></i>
-          </a>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2 class="text-secondary text-uppercase mb-0">Contato - Service</h2>
-                <hr class="star-dark mb-5">
-                <img class="img-fluid mb-5" src="#" alt="">
-                <p class="mb-5">
-                    - Deploy AWS
-                    - Spring Boot
-                    - Ajax
-                    - SMTP Google
-                    - MongoDB
-                    <br/>    
-                      https://github.com/carolinachangthomaz/contato-service
-                </p>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                  <i class="fa fa-close"></i>
-                  Fechar projeto</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Portfolio Modal 3 -->
-      <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-        <div class="portfolio-modal-dialog bg-white">
-          <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-            <i class="fa fa-3x fa-times"></i>
-          </a>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2 class="text-secondary text-uppercase mb-0">Nome projeto</h2>
-                <hr class="star-dark mb-5">
-                <img class="img-fluid mb-5" src="assets/img/portfolio/blank.png" alt="">
-                <p class="mb-5">
-  
-                </p>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                  <i class="fa fa-close"></i>
-                  Fechar projeto</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
