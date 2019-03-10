@@ -1,5 +1,7 @@
 <!-- Header -->
-<header class="masthead  text-white text-center" *ngIf="imagens">
+<header class="masthead text-center" *ngIf="imagens">
+    <h2 class="text-primary">{{projeto}}</h2>
+    <br>
   <div id="demo" class="carousel slide" data-ride="carousel" >
     <ul class="carousel-indicators">
       <li data-target="#demo" *ngFor="let x of imagens;let i = index"  attr.data-slide-to="{{i}}" ngClass="i == 0 ? 'active' : ''"></li>

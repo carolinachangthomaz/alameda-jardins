@@ -1,5 +1,5 @@
 <!-- About Section -->
-<section class="text-localizacao text-white mb-0" id="about">
+<section class="text-white mb-0"  id="about">
     <div class="container">
         <div _ngcontent-c8="" class="row qty-elements p-2">
             <div _ngcontent-c8="" class="col p-2" *ngFor="let card of cards">
@@ -12,5 +12,37 @@
               </div>
             </div>
           </div>
+    </div>
+    <div class="container">
+    <div class="table-responsive-xl">
+      <table class="table table-sm table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Torre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Área</th>
+            <th scope="col">Elevadores</th>
+            <th scope="col">Dormitórios</th>
+            <th scope="col">Suítes</th>
+            <th scope="col">Salas</th>
+            <th scope="col">Cozinhas</th>
+            <th scope="col">Vagas</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr *ngFor="let planta of plantas">
+              <th scope="row">{{planta.torre}}</th>
+              <td>{{planta.tipo}}</td>
+              <td>{{planta.area}}</td>
+              <td>{{planta.elevadores}}</td>
+              <td>{{planta.dormitorios}}</td>
+              <td>{{planta.suites}}</td>
+              <td>{{planta.salas}}</td>
+              <td>{{planta.cozinha}}</td>
+              <td>{{planta.vagas}}</td>
+           </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>

@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
             {src:"https://multimidia.lopes.com.br/240/15891/lancamento-alameda-jardins-piscina-11.png", texto: "Imagem 4"},
             {src:"https://multimidia.lopes.com.br/240/15891/lancamento-alameda-jardins-lounge-12.png", texto: "Imagem 5"}];
 
+  projeto = "Alameda Jardins";
+  
   constructor() { }
 
   ngOnInit() {

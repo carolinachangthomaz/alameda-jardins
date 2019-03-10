@@ -118,7 +118,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #fe8127;
+  color: #FF0000;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -126,7 +126,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #fe8127;
+  color: #FF0000;
 }
 
 #mainNav .navbar-toggler {
@@ -153,11 +153,11 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #fe8127;
+    background: #FF0000;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #fe8127;
+    background: #FF0000;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -335,11 +335,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #fe8127;
+  color: #FF0000;
 }
 
 a:focus, a:hover, a:active {
-  color: #e97406;
+  color: #FF0000;
 }
 
 .btn {
@@ -351,7 +351,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #fe8127 !important;
+  background-color: #FFFAFA !important;
 }
 
 .bg-secondary {
@@ -363,7 +363,7 @@ a:focus, a:hover, a:active {
 }
 
 .text-primary {
-  color: #fe8127 !important;
+  color: #FF0000 !important;
 }
 
 .text-secondary {
@@ -371,13 +371,13 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #fe8127;
-  border-color: #fe8127;
+  background-color: #FF0000;
+  border-color: #FF0000;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #e97406;
-  border-color: #e97406;
+  background-color: #FF0000;
+  border-color: #FF0000;
 }
 
 .btn-secondary {

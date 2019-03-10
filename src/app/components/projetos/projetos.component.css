@@ -1,0 +1,18 @@
+.boxVisita {
+    box-shadow: 5px 1px 5px 0px #E8E8E8, -5px -3px 5px 0px #E8E8E8, 0px 3px 5px 0px #E8E8E8;
+    width: 100%;
+    min-height: 300px;
+}
+
+.boxVisita .borda-input {
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    float: left;
+    clear: both;
+}
+
+.boxVisita input[type="text"] {
+    background: transparent;
+    border: 0px;
+    height: 60px;
+}
