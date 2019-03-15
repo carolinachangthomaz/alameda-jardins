@@ -9,9 +9,9 @@ $(function() {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
       var contactForm = new Object;
-      var nome = $("input#name").val();
+      var nome = $("input#nome").val();
       var email = $("input#email").val();
-      var telefone = $("input#phone").val();
+      var telefone = $("input#telefone").val();
       var mensagem = $("textarea#message").val();
       
       // Check for white space in name for Success/Fail message
@@ -25,7 +25,7 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "http://contato-service.us-east-1.elasticbeanstalk.com/profile",
+        url: "http://localhost:8080/profile",
         type: 'POST',
         contentType : 'application/json; charset=utf-8',
         data: JSON.stringify(contactForm),

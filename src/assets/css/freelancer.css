@@ -13,6 +13,8 @@ h6 {
   font-family: 'Montserrat';
 }
 
+
+
 hr.star-light,
 hr.star-dark {
   max-width: 15rem;
@@ -56,7 +58,7 @@ hr.star-dark:after {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 section h2 {
